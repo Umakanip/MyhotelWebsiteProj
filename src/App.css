@@ -1,0 +1,477 @@
+.home {
+  display: grid;
+  height: 100vh;
+  overflow-y: auto;
+  grid-template-columns: 74% 1fr; /* The first column takes up 8 units, and the second column takes up the remaining space */
+  /* gap: 10px; Adjust the gap between columns as needed */
+}
+
+.column1 {
+  /* background-color: #e0e0e0; Add your preferred background color or styling */
+  padding: 10px; /* Add padding or other styles as needed */
+}
+
+.column2 {
+  background-color: #3d7475; /* Add your preferred background color or styling */
+  padding: 10px; /* Add padding or other styles as needed */
+  text-align: center;
+}
+.plate-img {
+  position: absolute;
+  width: 43%;
+  right: 6%;
+  top: 14%;
+}
+.lettuce-img {
+  position: absolute;
+  width: 25%;
+  right: 14%;
+  bottom: 27%;
+  /* bottom: -1%; */
+}
+.user-profile {
+  color: white;
+  font-size: 13px;
+  padding: 0 10px;
+  display: inline-block; /* Ensure the span behaves like an inline-block element */
+  vertical-align: middle; /* Vertically align the span in the middle */
+  line-height: 1.5;
+}
+.user-profile:hover {
+  cursor: pointer;
+}
+.user-img {
+  display: inline-block;
+  vertical-align: middle; /* Ensure the image behaves like an inline-block element */
+  margin-right: 10px; /* Add some margin between the image and the text */
+}
+/* Navbar Css */
+/* .navbar { */
+/* background-color: #333; */
+/* height: 80px; */
+/* display: flex;
+  justify-content: center;
+  align-items: center; */
+/* } */
+nav {
+  /* background-color: #333; */
+  overflow: hidden;
+}
+
+.nav-links {
+  float: left;
+  display: block;
+  color: #5b558e;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-links::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #5b558e; /* Underline color */
+  transition: width 0.3s; /* Add transition for width change */
+}
+
+.nav-links:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-link {
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
+}
+.navbar-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* width: 50%; */
+  max-width: 1200px;
+}
+
+.navbar-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-logoimg {
+  width: 60%;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin-top: 0;
+}
+/* 
+
+.nav-item {
+  color: #ffcc00;
+  margin-right: 20px;
+  transition: color 15s;
+}
+.nav-item:hover {
+  font-size: 13px;
+  text-decoration: underline;
+}
+.nav-links {
+  text-decoration: none;
+  color: #5b558e;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+Add styles for active links if using React Router
+.nav-links.active {
+  border-bottom: 2px solid white;
+} */
+
+.food-text {
+  color: #f7f6f9;
+  font-size: 140px;
+  margin: 0;
+  font-weight: bold;
+  padding: 25px 0 0 0;
+  line-height: 1;
+}
+.unique-food {
+  color: #2e266f;
+  font-size: 54px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+/* Adjust the button styles */
+.input-group button {
+  background-color: #3d7475;
+  border: none;
+  margin-top: 30px;
+  height: 45px;
+  width: 10%; /* Allow the button to adjust its width based on content */
+  font-size: 23px;
+  font-weight: 400;
+  color: #fff;
+  position: absolute;
+  right: 68%;
+  border-radius: 45px 0 0 0;
+}
+
+/* Adjust the input styles */
+.input-group input {
+  height: 54px;
+  border: none;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  padding: 0 20px;
+  flex: 1;
+  width: 425px;
+}
+
+/* Add some space between the input and button */
+.input-group {
+  display: flex;
+  align-items: center; /* Vertically center the input and button */
+}
+.indore {
+  width: 145px;
+  padding: 18px 0 18px 19px;
+  background-color: #3d7475;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 0 45px 45px 0;
+}
+.indore:hover {
+  cursor: pointer;
+}
+.input-group button:hover {
+  cursor: pointer;
+}
+/* Dining Out Css */
+
+.dining-line {
+  height: 65px;
+  width: 15px;
+  background-color: #3d7475;
+
+  float: right;
+  margin-top: 35px;
+}
+.dining-text {
+  line-height: 1;
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.dining-para {
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #aaa;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .dining-text,
+  .dining-para {
+    margin: 0 20px;
+  }
+  .fire-overlay h3 {
+    font-size: 12px;
+  }
+  .fire-overlay p {
+    font-size: 8px !important;
+  }
+  .fire-overlay span,
+  .dining-line,
+  .service-line {
+    display: none;
+  }
+  .fire-overlay button {
+    font-size: 8px;
+  }
+}
+
+/* Booking Css */
+
+.fire-water {
+  width: 100%;
+  height: 100%;
+}
+.wondon-img {
+  width: 100%;
+  height: 100%;
+}
+.fire-overlay {
+  background: rgb(0 82 84 / 50%);
+  position: absolute;
+  bottom: 0;
+  /* width: 100%; */
+  height: 40%;
+  border-radius: 10px;
+  padding: 10px 35px;
+  color: white;
+  font-weight: bold;
+}
+.book-now {
+  height: 40px;
+  width: 140px;
+  background-color: #ffffff;
+  color: black;
+  float: right;
+  font-size: 15px;
+  border: 2px solid #ffffff;
+  color: #3d7475;
+  font-weight: bold;
+}
+
+/* Our services */
+
+.service-line {
+  height: 120px;
+  width: 15px;
+  background-color: #3d7475;
+  float: right;
+  margin-top: 5px;
+}
+.service-text {
+  line-height: 1;
+  font-size: 58px;
+  font-weight: bold;
+  margin-top: 0;
+  color: #2e266f;
+  padding-left: 20px;
+}
+.service-para {
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #aaa;
+}
+/* Explore foods css */
+.card-head {
+  font-size: 12px;
+  color: #3d7475;
+  font-weight: bold;
+}
+.card-rs {
+  font-size: 14px;
+  font-weight: bold;
+  float: right;
+  color: #3d7475;
+  padding-top: 10px;
+}
+.card-para {
+  font-size: 10px !important;
+
+  color: rgb(196 197 197) !important;
+  margin: 10px 10px 10px 0 !important;
+}
+.card {
+  display: block;
+  position: relative;
+  max-width: 262px;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #00838d;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(21);
+  }
+}
+.card:hover {
+  .card-rs,
+  .card-head,
+  .card-para {
+    transition: all 0.3s ease-out;
+    color: #ffffff;
+  }
+}
+/* dels css */
+.deal-comp {
+  height: 700px;
+  background-color: rgb(250 250 250);
+  margin: 150px 100px 50px 100px;
+}
+.deal-line {
+  height: 90px;
+  width: 18px;
+  background-color: #3d7475;
+  display: inline-block;
+  float: right;
+  margin-top: 5px;
+}
+.download {
+  line-height: 1;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(46 38 111);
+  padding: 18px 0 0 20px;
+}
+.download-content {
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 400;
+  padding-top: 20px;
+  color: rgb(142 137 137);
+}
+.app-screen {
+  width: 60%;
+  position: absolute;
+  right: 20%;
+  z-index: 10000;
+}
+.app-store {
+  position: absolute;
+  right: 43%;
+  top: 17%;
+  width: 40%;
+}
+
+/* Footer */
+
+.footer ul {
+  display: inline-flex;
+  list-style: none;
+  vertical-align: top;
+  color: rgb(46 38 111);
+  font-size: 10px;
+}
+.footer ul li {
+  padding: 150px 20px 0 0;
+  font-size: 10px;
+}
+.footer-notify {
+  font-size: 24px;
+  color: rgb(46 38 111);
+  font-weight: 400;
+}
+.footer-content {
+  font-size: 10px;
+  color: rgb(46 38 111);
+}
+.search-input {
+  border-radius: 20px;
+  box-shadow: rgb(211, 211, 211) 0px 0px 33pt 0.5pt;
+  border: none;
+  margin-top: 40px;
+  /* paddingTop: "20px", */
+  height: 40px;
+  font-size: 10px;
+  color: rgb(46 38 111);
+  padding-left: 12px;
+  width: 200px;
+}
+.search-icon {
+  position: absolute;
+  right: 21%;
+  top: 80.5%;
+  width: 60px;
+}
+
+.footer-text {
+  text-align: center;
+  position: relative;
+  top: 20%;
+}
+
+/* Styles for screens smaller than or equal to 767px (typical for phones) */
+@media only screen and (max-width: 767px) {
+  /* Your mobile styles here */
+  .lettuce-img,
+  .plate-img,
+  .column2 {
+    display: none;
+  }
+  .home {
+    grid-template-columns: 100% 1fr;
+  }
+}
+
+/* Styles for screens between 768px and 1024px (typical for tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Your tablet styles here */
+  .food-text {
+    font-size: 100px;
+  }
+  .unique-food {
+    font-size: 40px;
+  }
+  .input-group input {
+    width: 245px;
+  }
+}
+
+/* Styles for screens larger than or equal to 1025px (typical for desktops) */
+@media only screen and (min-width: 1025px) {
+  /* Your desktop styles here */
+}

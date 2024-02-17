@@ -1,0 +1,41 @@
+.navbar {
+  background-color: #333;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.navbar-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-links {
+  color: #5b558e;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Add styles for active links if using React Router */
+.nav-links.active {
+  border-bottom: 2px solid white;
+}
